@@ -1,6 +1,8 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <form:form method="POST" action="/books/edit/${id}" modelAttribute="book">
+	<form:hidden path="id"/>
+
     <form:label path="title">Title: 
     <form:errors path="title"/>
     <form:input path="title"/></form:label>
